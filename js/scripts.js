@@ -7,6 +7,9 @@ function countUp(input){
 		if(index%3 === 0) {
 		total.push("ping");
 		}
+		else if(index%5 === 0){
+		total.push("pong");
+		}
 		else{
 			total.push(index);
 		}
