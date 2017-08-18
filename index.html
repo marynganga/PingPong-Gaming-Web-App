@@ -17,19 +17,24 @@
 			<!-- The Title Section Section contains the heading of the page -->
 			<div class="titleSection">
 			<div class="jumbotron" id="title">
-				<h1>Ping Pong</h1>
-				<img src="">
+
+				<h1><img src="assets/images/img2.jpg" alt="Ping pong Image">Ping Pong</h1>
+				
 			</div>
 			</div>
 			<!-- The about Section contains information about the creator -->
 			<div class="aboutSection">
-				<h3>About</h3>
-				<h4>Created by</h4>
+				<h3>About Ping Pong</h3>
+				<img src="assets/images/img3.png" alt="Ping pong Image">
+				<hr />
+				<h4>Created by:</h4>
 				<p>Mary Ng'ang'a</p>
-				<h4>Github Username/Url</h4>
+				<hr />
+				<h4>Github Username/Url:</h4>
 				<a href="https://github.com/marynganga">marynganga</a>
+				<hr />
 				<h4>Week 3 Test for:</h4>
-				<p>Arrays, Looping and BDD</p>
+				<p>Arrays, Looping and Behaviour Driven Development</p>
 			</div>
 			
 			<!-- The Rules Secion contains the rules the user should follow-->
@@ -37,6 +42,7 @@
 			<div class="rulesSection">
 				<h3>Let's Play</h3>
 				<h4>Rules</h4>
+				<hr />
 				<p>Ping Pong will count to your number from 1 with the following exceptions:</p>
 				<ul>
 					<li>Numbers divisible by 3 return 'ping'</li>
@@ -46,23 +52,28 @@
 			</div>
 			
 			<!-- The Form Section contains an email entry form for the users number -->
-			<div id="userInput" class="formSection form-group">
+			<div id="userInput" class="formSection">
+			<div class="form-group">
 				<form>
-				<p>Enter you number:</p>
-					<div class="rows">
+				<h4>Enter your number here:</h4>
+				<hr />
+					<div class="row">
 						<div class="col-md-8">
 							<input type="text" id="inputNumber" placeholder="Your Number" class="form-control">
+							
 						</div>
 						<div class="col-md-4">
-							 <button type="submit" name="button" id="submit">Submit</button>
-							<!--<input type="button" value="PingPong!" id="pingPong" class="form-control"> -->
+							 <button type="submit" name="button" id="submit">Ping Pong!!!</button>
 						</div>
 					</div>
 				</form>
+				</div>
 			</div>
 			<!-- The results section displays the results after it has been processed -->
 			<div class="resultsSection">
+			<h4>Your results appear here:</h4>
 				<ul id="output">
+				<hr />
 					
 				</ul>
 			</div>
