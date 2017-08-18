@@ -1,6 +1,7 @@
 //Back End Logic
- var total = [];
+ 
 function countUp(input){
+	var total = [];
 	for (var index = 1; index <= input; index++) {
 		//test
 		//console.log(index)
@@ -25,6 +26,8 @@ function countUp(input){
 $(document).ready(function(){
 	$("#userInput form").submit(function(event){
 		event.preventDefault();
+		//Clear previous output
+		$("ul").empty();
 		//store the user input into a variable
 		var number = parseInt($("#inputNumber").val());
 		//test
@@ -35,7 +38,9 @@ $(document).ready(function(){
 		//console.log(countedNumbers);
 		for (var index = 0; index <= countedNumbers.length-1; index++) {
 		$("ul#output").append("<li>" + countedNumbers[index] + "</li>");
- 		};
+		};
+ 		
+
 	});
 });
 
