@@ -33,9 +33,9 @@ $(document).ready(function(){
 		//Call the function countUp to work on number in a new variable
 		var countedNumbers = countUp(number);
 		//console.log(countedNumbers);
-		
-		$("ul#output").append("<li>" + countedNumbers + "</li>");
- 
+		for (var index = 0; index <= countedNumbers.length-1; index++) {
+		$("ul#output").append("<li>" + countedNumbers[index] + "</li>");
+ 		};
 	});
 });
 
