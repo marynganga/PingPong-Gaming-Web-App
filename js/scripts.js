@@ -4,11 +4,14 @@ function countUp(input){
 	for (var index = 1; index <= input; index++) {
 		//test
 		//console.log(index)
-		if(index%3 === 0) {
-		total.push("ping");
+		if(index%3 === 0 && index%5 === 0){
+		total.push("pingpong");
 		}
 		else if(index%5 === 0){
 		total.push("pong");
+		}
+		else if(index%3 === 0) {
+		total.push("ping");
 		}
 		else{
 			total.push(index);
@@ -16,6 +19,7 @@ function countUp(input){
 	};
 	return total;
 };
+
 
 // Front End Logic
 $(document).ready(function(){
@@ -28,10 +32,11 @@ $(document).ready(function(){
 
 		//Call the function countUp to work on number in a new variable
 		var countedNumbers = countUp(number);
-			console.log(countedNumbers);
-		$("#output").append("<li>" + total + "</li>" + "<br />");
-  })
-	});
+		//console.log(countedNumbers);
 		
+		$("ul#output").append("<li>" + countedNumbers + "</li>");
+ 
+	});
+});
 
 
