@@ -1,89 +1,81 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-	  	<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
-	  	<link href="https://fonts.googleapis.com/css?family=Acme|Berkshire+Swash|Catamaran" rel="stylesheet">
-	  	<link rel="stylesheet" href="css/styles.css" type="text/css"> 
-	 	<script src="js/jquery-3.2.1.js"></script>
-	  	<script src="js/scripts.js"></script>
-	 	<title>Ping Pong</title>
-	</head>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Berkshire+Swash|Catamaran" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Ping Pong</title>
+</head>
 
-	<body>
-		<div class="container">
-			<!-- The Title Section Section contains the heading of the page -->
-			<div class="titleSection">
-			<div class="jumbotron" id="title">
-
-				<h1><img src="assets/images/img2.jpg" alt="Ping pong Image">Ping Pong</h1>
-				
-			</div>
-			</div>
-			<!-- The about Section contains information about the creator -->
-			<div class="aboutSection">
-				<h3>About Ping Pong</h3>
-				<img src="assets/images/img3.png" alt="Ping pong Image">
-				<hr />
-				<h4>Created by:</h4>
-				<p>Mary Ng'ang'a</p>
-				<hr />
-				<h4>Github Username/Url:</h4>
-				<a href="https://github.com/marynganga">marynganga</a>
-				<hr />
-				<h4>Week 3 Test for:</h4>
-				<p>Arrays, Looping and Behaviour Driven Development</p>
-			</div>
-			
-			<!-- The Rules Secion contains the rules the user should follow-->
-			
-			<div class="rulesSection">
-				<h3>Let's Play</h3>
-				<h4>Rules</h4>
-				<hr />
-				<p>Ping Pong is a game that will count to the number you enter starting from 1 with the following exceptions:</p>
-				<ul>
-					<li>Numbers divisible by 3 will become 'ping'</li>
-					<li>Numbers divisible by 5 will become 'pong'</li>
-					<li>Numbers divisible by 15 will become 'pingping'</li>
-				</ul>
-			</div>
-			
-			<!-- The Form Section contains an email entry form for the users number -->
-			<div id="userInput" class="formSection">
-			<div class="form-group">
-				<form>
-				<h4>Enter your number here:</h4>
-				<hr />
-					<div class="row">
-						<div class="col-md-8">
-							<input type="number" id="inputNumber" placeholder="Your Number" class="form-control">
-							
-						</div>
-						<div class="col-md-4">
-							 <button type="submit" name="button" id="submit">Ping Pong!!!</button>
-						</div>
-					</div>
-				</form>
-				</div>
-			</div>
-			<!-- The results section displays the results after it has been processed -->
-			<div class="resultsSection">
-			<h4>Your results appear here:</h4>
+<body>
+    <div class="container">
+        <!-- The Title Section Section contains an image, the heading of the page and two circular animations -->
+        <div class="titleSection">
+            <div class="jumbotron" id="title">
+                <h1><img src="assets/images/img2.jpg" alt="Ping pong Image">Ping Pong</h1>
+                <div>
+                    <p id="animation1"></p>
+                    <p id="animation2"></p>
+                </div>
+            </div>
+        </div>
+        <!-- The about Section contains information about the creator -->
+        <div class="aboutSection">
+            <h3>About Ping Pong</h3>
+            <img src="assets/images/img3.png" alt="Ping pong Image">
             <hr />
-			    <p id="checkInput"></p>
-			    
-				<ul id="output" class="pingText">
-				
-					
-				</ul>
-				
-			</div>
-		</div>
-		
-
-	</body>
+            <h4>Created by:</h4>
+            <p>Mary Ng'ang'a</p>
+            <hr />
+            <h4>Github Username/Url:</h4>
+            <a href="https://github.com/marynganga">marynganga</a>
+            <hr />
+            <h4>Week 3 Test for:</h4>
+            <p>Arrays, Looping and Behaviour Driven Development</p>
+        </div>
+        <!-- The Rules Secion contains the rules the user should follow while playing the game-->
+        <div class="rulesSection">
+            <h3>Let's Play</h3>
+            <h4>Rules</h4>
+            <hr />
+            <p>Ping Pong is a game that will count up to the number you enter starting from 1 with the following exceptions:</p>
+            <ul>
+                <li>Numbers divisible by 3 will become 'ping'</li>
+                <li>Numbers divisible by 5 will become 'pong'</li>
+                <li>Numbers divisible by 15 will become 'pingping'</li>
+            </ul>
+        </div>
+        <!-- The Form Section contains an entry field for the user to enter their number and submit -->
+        <div id="userInput" class="formSection">
+            <div class="form-group">
+                <form>
+                    <h4>Enter your number here:</h4>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-8">
+                            <input type="number" id="inputNumber" placeholder="Your Number" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" name="button" id="submit">Ping Pong!!!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- The results section displays the results after it has been processed -->
+        <div class="resultsSection">
+            <h4>Your results appear here:</h4>
+            <hr />
+            <p id="checkInput"></p>
+            <ul id="output" class="pingText">
+            </ul>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
 
 </html>

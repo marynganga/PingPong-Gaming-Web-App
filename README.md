@@ -1,14 +1,11 @@
 # Ping Pong Gaming Web Application
 
-#### A web application that takes a number from a user, performs a function and returns the results to the user from 1 to the inputted number with some exeptions.  18-08-2017
+#### A web application that prompts a number from a user, then counts up from 1 to the users given number with some exceptions and outputs the reults back to the user. 18-08-2017
 
 #### By **Mary Ng'ang'a**
 
 ## Description
-This web application takes a number from a user and performs a function to return the results from 1 to the inputted number with the following exeptions:
-* Numbers divisible with 3 are returned as 'ping'.
-* Numbers divisible with 5 are returned as 'pong'.
-* Numbers divisible with 15 are returned as 'ping pong'.
+Ping Pong is a gaming web application that takes a number from a user and counts up from 1 to the given number. However, it changes the results of the numbers divisible by 3, 5 and 15 to 'ping', 'pong' and 'pingpong' respectively.
 
 ## Specifications
 * It can count up to the provided number.
@@ -51,6 +48,5 @@ There are no known bugs.
 * jQUERY
 
 ### License
-
 
 MIT (c) [Mary Ng'ang'a](https://github.com/marynganga) 
