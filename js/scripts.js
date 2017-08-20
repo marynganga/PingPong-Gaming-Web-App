@@ -1,6 +1,6 @@
 //Back End Logic
- 
-function countUp(input){
+//Function to count up the inputted number while changing the multiples of 3, 5 and 15.
+function countUp(input) {
 	var total = [];
 	for (var index = 1; index <= input; index++) {
 		//test
@@ -15,12 +15,17 @@ function countUp(input){
 		total.push("ping");
 		}
 		else{
-			total.push(index);
+        total.push(index);
 		}
 	};
 	return total;
 };
-
+//Function to clear the input field after submission.
+function clearForm(form)
+{
+    $(':input').not(':button, :submit, :reset, :hidden, :checkbox, :radio').val('');
+    $(':checkbox, :radio').prop('checked', false);
+};
 
 // Front End Logic
 $(document).ready(function(){
@@ -28,18 +33,16 @@ $(document).ready(function(){
 		event.preventDefault();
 		//Clear previous output
 		$("ul").empty();
-		//store the user input into a variable
+		//Store the user input into a variable
 		var number = parseInt($("#inputNumber").val());
-		//test
-		//console.log(number)
-
 		//Call the function countUp to work on number in a new variable
 		var countedNumbers = countUp(number);
-		//console.log(countedNumbers);
+        //Print out the processed numbers in list form.
 		for (var index = 0; index <= countedNumbers.length-1; index++) {
 		$("ul#output").append("<li>" + countedNumbers[index] + "</li>");
 		};
- 		
+ 		//Clear previous input
+        clearForm("input");
 
 	});
 });
