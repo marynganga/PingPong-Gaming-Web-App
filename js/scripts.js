@@ -34,17 +34,18 @@ $(document).ready(function(){
 		//Clear previous output
 		$("ul").empty();
 		//Store the user input into a variable
-		var number = parseInt($("#inputNumber").val());
-		//Call the function countUp to work on number in a new variable
-		var countedNumbers = countUp(number);
+		var inputtedNumber = parseInt($("#inputNumber").val());
+		//Call the function countUp to work on imputtedNumber inside a new variable
+		var countedNumbers = countUp(inputtedNumber);
         //Print out the processed numbers in list form.
 		for (var index = 0; index <= countedNumbers.length-1; index++) {
 		$("ul#output").append("<li>" + countedNumbers[index] + "</li>");
 		};
- 		//Clear previous input
+ 		//Clear the previous input by calling the function clearForm to empty out the input field
         clearForm("input");
 
 	});
 });
+
 
 
