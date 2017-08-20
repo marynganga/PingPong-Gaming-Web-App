@@ -1,13 +1,33 @@
+/*General HTML Tags Styles*/
+
 body {
-    background-image: url("../assets/images/img4compressed.jpeg");
+    background-image: url("../assets/images/img4b.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: cornsilk;
+    background-color: antiquewhite;
     margin: auto;
     font-size: 16px;
     text-align: center;
 }
+
+h1,
+h4,
+h3,
+button {
+    font-family: 'Berkshire Swash', cursive;
+}
+
+hr {
+    border-top: 1px solid #630048;
+}
+
+a {
+    color: #630048;
+}
+
+
+/* Styles for the Title Section*/
 
 .container {
     width: 80%;
@@ -30,15 +50,92 @@ body {
     margin-right: 20px;
     padding-right: 20px;
     border-right: 2px solid rgb(113, 5, 12);
+    width: 200px;
+    height: auto;
 }
 
-.aboutSection {
-    width: 28%;
-    float: left;
-    padding: 10px;
-    height: 60%;
-  
+
+/*Rolling Balls Animation Styles*/
+
+#animation1,
+#animation2 {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 0px;
 }
+
+#animation1 {
+    animation: rollingBall1 5s ease-in-out 0s infinite;
+}
+
+@keyframes rollingBall1 {
+    0% {
+        background-color: #ffd1d4;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: #630048;
+        left: 200px;
+        top: 40px;
+    }
+    50% {
+        background-color: #ed9fd8;
+        left: 400px;
+        top: 0px;
+    }
+    75% {
+        background-color: #7a050c;
+        left: 600px;
+        top: 40px;
+    }
+    100% {
+        background-color: #eca1a6;
+        left: 800px;
+        top: 0px;
+    }
+    ;
+}
+
+#animation2 {
+    animation: rollingBall2 5s ease-in-out 0s infinite reverse;
+}
+
+@keyframes rollingBall2 {
+    0% {
+        background-color: #ffd1d4;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: #630048;
+        left: 200px;
+        top: 40px;
+    }
+    50% {
+        background-color: #ed9fd8;
+        left: 400px;
+        top: 0px;
+    }
+    75% {
+        background-color: #7a050c;
+        left: 600px;
+        top: 40px;
+    }
+    100% {
+        background-color: #eca1a6;
+        left: 800px;
+        top: 0px;
+    }
+    ;
+}
+
+
+/*Combined Styles for the About, Rules, Form and Result Sections*/
 
 .aboutSection,
 .rulesSection,
@@ -52,18 +149,37 @@ body {
     margin-bottom: 20px;
 }
 
+
+/*The About Section Styles*/
+
+.aboutSection {
+    width: 28%;
+    float: left;
+    padding: 10px;
+    height: 60%;
+}
+
+.aboutSection img {
+    width: 100px;
+    height: 100px;
+}
+
+
+/*Combined Styles for the Rules, Form and Result Sections*/
+
 .rulesSection,
 .formSection,
 .resultsSection {
     float: right;
     width: 70%;
     padding: 5px;
-    
 }
+
+
+/*The Rules Section Styles*/
 
 .rulesSection {
     height: 30%;
-   
 }
 
 .rulesSection ul,
@@ -71,6 +187,9 @@ body {
     text-align: center;
     list-style-position: inside;
 }
+
+
+/*The Form Section Styles*/
 
 .formSection {
     height: 20%;
@@ -91,6 +210,9 @@ button {
     background-color: #d6cbd3;
     box-shadow: 0px 0px 10px #337ab7;
 }
+
+
+/*The Results Section Styles*/
 
 .resultsSection {
     height: 30%;
@@ -113,53 +235,33 @@ button {
     font-size: 20px;
 }
 
-h1,
-h4,
-h3,
-button {
-    font-family: 'Berkshire Swash', cursive;
-}
 
-hr {
-    border-top: 1px solid #630048;
-}
-
-a {
-    color: #630048;
-}
-
-.aboutSection img {
-    width: 100px;
-    height: 100px;
-}
-h1 img{
-    width: 200px;
-    height: auto;
-}
+/*Media Queries for Image Resizing and Page layout Responsiveness*/
 
 @media screen and (min-width:700px) {
     .aboutSection img {
         width: 175px;
         height: 175px;
     }
-    h1 img{
-    width: auto;
-    height: auto;
+    h1 img {
+        width: auto;
+        height: auto;
+    }
 }
-}
-@media screen and (max-width:480px){
-    .aboutSection{
+
+@media screen and (max-width:480px) {
+    .aboutSection {
         float: none;
         width: 100%;
     }
     .rulesSection,
-.formSection,
+    .formSection,
     .resultsSection {
         width: 100%;
     }
     .rulesSection ul,
-#output li {
-    text-align: left;
-    list-style-position: outside;
-}
+    #output li {
+        text-align: left;
+        list-style-position: outside;
+    }
 }
