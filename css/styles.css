@@ -1,7 +1,7 @@
 /*General HTML Tags Styles*/
 
 body {
-    background-image: url("../assets/images/img4b.jpeg");
+    background-image: url("../assets/images/img4compressed.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -199,6 +199,9 @@ a {
     width: 80%;
     margin: auto;
     padding-bottom: 10px;
+}
+.form-control{
+    padding-left: 10px;
 }
 
 button {
